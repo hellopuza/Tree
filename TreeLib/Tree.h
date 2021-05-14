@@ -111,6 +111,12 @@ public:
     void recountDepth ();
 
 //------------------------------------------------------------------------------
+/*! @brief   Recursive previous node pointers recount.
+ */
+
+    void recountPrev ();
+
+//------------------------------------------------------------------------------
 /*! @brief   Node copy constructor.
  *
  *  @param   obj         Source node

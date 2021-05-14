@@ -39,10 +39,11 @@ int main(int argc, char* argv[])
     Node<int>* newnd = new Node<int>;
 
     *newnd = *e;
+    newnd->recountPrev();
+    newnd->recountDepth();
 
-    printf("%d\n", newnd->left_->right_->getData());
-    printf("%d\n", newnd->left_->left_->getData());
-    printf("%d\n", newnd->right_->getData());
+    newTree_root(newtr, newnd, int);
+    newtr.Dump();
 
     return 0;
 }
