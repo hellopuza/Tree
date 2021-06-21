@@ -299,7 +299,7 @@ void Tree<TYPE>::Dump (const char* dumpname)
 
 #elif defined(__linux__)
 
-    sprintf(command, "iconv -f CP1251 -t UTF8 \"%s\" -o \"new%s\"", dumpname, dumpname);
+    sprintf(command, "iconv -f UTF8 -t UTF8 \"%s\" -o \"new%s\"", dumpname, dumpname);
 
 #else
 #error Program is only supported by linux or windows platforms
